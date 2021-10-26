@@ -8,21 +8,17 @@ console.log(userMail);
 const pcMail = ["passarotto13@gmail.com", "tpassarotto@gmail.com", "tommaso.passarotto@gmail.com"];
 // console.log(pcMail);
 
+let trovato = false;
+
 for (let i = 0; i < pcMail.length; i++) {
     // console.log(pcMail[i]);
     if (userMail === pcMail[i]) {
-    document.getElementById("container").innerHTML = "La tua Email è corretta."
-    } else {
-    document.getElementById("container").innerHTML = "La tua Email non è corretta."
+        trovato = true;
     }
 }
-// pcMail[0] 
-// pcMail[1]
-// pcMail[2]
 
-// condizione di veridicità per mail
-// if (userMail === pcMail[0] || userMail === pcMail[1] || userMail === pcMail[2]) {
-//     document.getElementById("container").innerHTML = "La tua Email è corretta."
-// } else {
-//     document.getElementById("container").innerHTML = "La tua Email non è corretta."
-// }
+if (trovato == true) {
+    document.getElementById("container").innerHTML = "La tua Email è corretta."
+} else {
+    document.getElementById("container").innerHTML = "La tua Email non è corretta."
+}
