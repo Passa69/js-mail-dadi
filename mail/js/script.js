@@ -3,13 +3,16 @@
 //  creazione array
 const pcMail = ["passarotto13@gmail.com", "tpassarotto@gmail.com", "tommaso.passarotto@gmail.com"];
 // console.log(pcMail);
+for (let i = 0; i < pcMail.length; i++) {
+    console.log(pcMail[i]);
+}
 
 // Richiesta all'utente
 const userMail = prompt("Scrivi qui la tua Email: ");
 console.log(userMail);
 
 // condizione di veridicità per mail
-if (userMail === pcMail) {
+if (userMail === ) {
     document.getElementById("container").innerHTML = "La tua Email è corretta."
 } else {
     document.getElementById("container").innerHTML = "La tua Email non è corretta."
