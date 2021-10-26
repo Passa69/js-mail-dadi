@@ -7,3 +7,12 @@ console.log(userNum);
 // generazione casuale di numero da pc
 const pcNum = Math.floor(Math.random() * (6 - 1) + 1);
 console.log(pcNum);
+
+// condizione di confronto
+if (userNum > pcNum) {
+    document.getElementById("container").innerHTML = "Complimenti! Hai vinto"
+} else if (userNum < pcNum) {
+    document.getElementById("container").innerHTML = "Peccato! Hai perso"
+} else if (userNum === pcNum) {
+    document.getElementById("container").innerHTML = "Pareggio! Ritenta"
+}
