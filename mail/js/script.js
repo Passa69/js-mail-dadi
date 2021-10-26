@@ -6,13 +6,16 @@ const pcMail = ["passarotto13@gmail.com", "tpassarotto@gmail.com", "tommaso.pass
 for (let i = 0; i < pcMail.length; i++) {
     console.log(pcMail[i]);
 }
+pcMail[0] 
+pcMail[1]
+pcMail[2]
 
 // Richiesta all'utente
 const userMail = prompt("Scrivi qui la tua Email: ");
 console.log(userMail);
 
 // condizione di veridicità per mail
-if (userMail === ) {
+if (userMail === pcMail[0] || userMail === pcMail[1] || userMail === pcMail[2]) {
     document.getElementById("container").innerHTML = "La tua Email è corretta."
 } else {
     document.getElementById("container").innerHTML = "La tua Email non è corretta."
