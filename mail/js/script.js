@@ -7,6 +7,7 @@ console.log(userMail);
 //  creazione array
 const pcMail = ["passarotto13@gmail.com", "tpassarotto@gmail.com", "tommaso.passarotto@gmail.com"];
 // console.log(pcMail);
+
 for (let i = 0; i < pcMail.length; i++) {
     // console.log(pcMail[i]);
     if (userMail === pcMail[i]) {
